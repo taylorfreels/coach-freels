@@ -1,14 +1,7 @@
 <h1>Teams</h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Team</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let teamLink of teamLinks">
-      <td><app-link [link]="teamLink"></app-link></td>
-    </tr>
-  </tbody>
-</table>
+<div class="btn-toolbar">
+  <div class="btn-group me-3 mb-3" *ngFor="let teamLink of teamLinks">
+    <app-link [link]="teamLink"></app-link>
+  </div>
+</div>

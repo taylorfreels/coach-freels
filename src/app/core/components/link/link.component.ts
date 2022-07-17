@@ -8,6 +8,8 @@ import { Link } from '../../models/link';
   styleUrls: ['./link.component.scss']
 })
 export class LinkComponent implements OnInit {
+  public isActive: boolean = false;
+
   @Input() link!: Link;
 
   constructor() { }
