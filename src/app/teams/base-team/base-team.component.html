@@ -1,0 +1,38 @@
+<h1>{{ header }}</h1>
+
+<mdb-tabs>
+  <mdb-tab *ngIf="games" title="Games">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Opponent</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let game of games">
+          <td>{{ game.date | date }}</td>
+          <td>{{ game.opponent }}</td>
+          <td><app-link [link]="game.link"></app-link></td>
+        </tr>
+      </tbody>
+    </table>
+  </mdb-tab>
+  <mdb-tab *ngIf="practices" title="Practices">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let practice of practices">
+          <td>{{ practice.date | date }}</td>
+          <td><app-link [link]="practice.link"></app-link></td>
+        </tr>
+      </tbody>
+    </table>
+  </mdb-tab>
+</mdb-tabs>

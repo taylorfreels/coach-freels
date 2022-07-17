@@ -7,14 +7,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><app-link angularLink="/zion-womens-soccer" name="Zion Womans Soccer"></app-link></td>
-    </tr>
-    <tr>
-      <td><app-link angularLink="/zion-mens-soccer" name="Zion Mens Soccer"></app-link></td>
-    </tr>
-    <tr>
-      <td><app-link angularLink="/columbia-arsenal-u17b-soccer" name="Columbia Arsenal U17B Soccer"></app-link></td>
+    <tr *ngFor="let teamLink of teamLinks">
+      <td><app-link [link]="teamLink"></app-link></td>
     </tr>
   </tbody>
 </table>

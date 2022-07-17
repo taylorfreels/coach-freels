@@ -1,4 +1,4 @@
-<a *ngIf="link" [href]="link" class="btn btn-primary btn-lg active" role="button"
-  aria-pressed="true" target="_blank" rel="noopener noreferrer">{{ name }}</a>
-<a *ngIf="angularLink" [routerLink]="angularLink" class="btn btn-primary btn-lg active" role="button"
-  aria-pressed="true" target="_blank" rel="noopener noreferrer">{{ name }}</a>
+<a *ngIf="!link.isAngularRoute" [href]="link.value" class="btn btn-primary btn-lg active" role="button"
+  aria-pressed="true" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
+<a *ngIf="link.isAngularRoute" [routerLink]="link.value" class="btn btn-primary btn-lg active" role="button"
+  aria-pressed="true" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>

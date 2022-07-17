@@ -5,6 +5,7 @@ import { ZionMensSoccerComponent } from './zion-mens-soccer/zion-mens-soccer.com
 import { ColumbiaArsenalU17bSoccerComponent } from './columbia-arsenal-u17b-soccer/columbia-arsenal-u17b-soccer.component';
 import { TeamsComponent } from './teams.component';
 import { CoreModule } from '../core/core.module';
+import { BaseTeamComponent } from './base-team/base-team.component';
 
 
 
@@ -13,7 +14,8 @@ import { CoreModule } from '../core/core.module';
     ZionWomensSoccerComponent,
     ZionMensSoccerComponent,
     ColumbiaArsenalU17bSoccerComponent,
-    TeamsComponent
+    TeamsComponent,
+    BaseTeamComponent
   ],
   imports: [CoreModule],
   exports: [TeamsComponent]
