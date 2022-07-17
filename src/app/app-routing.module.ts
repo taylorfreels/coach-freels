@@ -6,7 +6,8 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 import { ZionWomensSoccerComponent } from './teams/zion-womens-soccer/zion-womens-soccer.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: AppComponent },
+  { path: '', pathMatch: 'full', component: PageNotFoundComponent },
+  { path: 'trf', component: AppComponent },
   { path: 'zion-womens-soccer', component: ZionWomensSoccerComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
