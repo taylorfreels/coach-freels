@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ComponentsModule } from './components/components.module';
 import { CommonModule } from '@angular/common';
+import { MdbAngularModule } from './modules/mdb-angular.module';
 
 @NgModule({
   imports: [
@@ -12,14 +13,16 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     BrowserAnimationsModule,
     ComponentsModule,
-    RouterModule
+    RouterModule,
+    MdbAngularModule
   ],
   exports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     ComponentsModule,
-    RouterModule
+    RouterModule,
+    MdbAngularModule
   ]
 })
 export class CoreModule { }
