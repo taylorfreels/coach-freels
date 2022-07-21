@@ -30,7 +30,5 @@ export class ZionMensSoccerComponent implements OnInit {
 
   ngOnInit(): void {
     this.practices = this.router.url.includes(hiddenRoute) ? this.closedPractices : this.openPractices;
-    this.practices.sort((a, b) => b.date.getTime() - a.date.getTime());
-    this.games.sort((a, b) => b.date.getTime() - a.date.getTime());
   }
 }

@@ -12,6 +12,7 @@
 <a
   *ngIf="link.isAngularRoute"
   [routerLink]="link.value"
+  [queryParams]="link.queryParams"
   class="btn btn-primary"
   [ngClass]="isActive ? 'active' : ''"
   role="button"
