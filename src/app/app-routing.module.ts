@@ -7,6 +7,7 @@ import { ColumbiaArsenalU17bSoccerComponent } from './teams/columbia-arsenal-u17
 import { ZionMensSoccerComponent } from './teams/zion-mens-soccer/zion-mens-soccer.component';
 import { ZionWomensSoccerComponent } from './teams/zion-womens-soccer/zion-womens-soccer.component';
 
+export const hiddenRoute: string = 'closed';
 export const teamRoutes: Routes = [
   { path: 'zion-womens-soccer', component: ZionWomensSoccerComponent, data: { name: 'Zion Women\'s Soccer' } },
   { path: 'zion-mens-soccer', component: ZionMensSoccerComponent, data: { name: 'Zion Men\'s Soccer' } },
