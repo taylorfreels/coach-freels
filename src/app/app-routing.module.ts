@@ -7,12 +7,16 @@ import { ColumbiaArsenalU17bSoccerComponent } from './teams/columbia-arsenal-u17
 import { ZionMensSoccerComponent } from './teams/zion-mens-soccer/zion-mens-soccer.component';
 import { ZionWomensSoccerComponent } from './teams/zion-womens-soccer/zion-womens-soccer.component';
 
+export const teamRoutes: Routes = [
+  { path: 'zion-womens-soccer', component: ZionWomensSoccerComponent, data: { name: 'Zion Woman\'s Soccer' } },
+  { path: 'zion-mens-soccer', component: ZionMensSoccerComponent, data: { name: 'Zion Men\'s Soccer' } },
+  { path: 'columbia-arsenal-u17b-soccer', component: ColumbiaArsenalU17bSoccerComponent, data: { name: 'Columbia Arsenal U17B Soccer' } }
+];
+
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: PageNotFoundComponent },
   { path: 'trf3141592653589793', component: TrfComponent },
-  { path: 'zion-womens-soccer', component: ZionWomensSoccerComponent },
-  { path: 'zion-mens-soccer', component: ZionMensSoccerComponent },
-  { path: 'columbia-arsenal-u17b-soccer', component: ColumbiaArsenalU17bSoccerComponent },
+  ...teamRoutes,
   { path: '**', component: PageNotFoundComponent }
 ];
 
