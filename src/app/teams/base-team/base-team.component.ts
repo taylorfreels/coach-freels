@@ -16,6 +16,8 @@ export class BaseTeamComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.games?.sort((a, b) => b.date.getTime() - a.date.getTime());
+    this.practices?.sort((a, b) => b.date.getTime() - a.date.getTime());
   }
 
 }
