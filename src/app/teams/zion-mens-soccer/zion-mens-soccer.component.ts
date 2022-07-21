@@ -11,12 +11,12 @@ import { Practice } from '../models/practice';
 })
 export class ZionMensSoccerComponent implements OnInit {
   public games: Game[] = [
-    new Game(new Date('7/3/2022'), 'Opponent 1', new Link('Google', 'https://www.google.com/')),
-    new Game(new Date('7/9/2022'), 'Opponent 2', new Link('Google', 'https://www.google.com/'))
+    //new Game(new Date('7/3/2022'), 'Opponent 1', new Link('Google', 'https://www.google.com/')),
+    //new Game(new Date('7/9/2022'), 'Opponent 2', new Link('Google', 'https://www.google.com/'))
   ];
   public practices: Practice[] = [
-    new Practice(new Date('7/4/2022'), new Link('Google', 'https://www.google.com/')),
-    new Practice(new Date('7/10/2022'), new Link('Google', 'https://www.google.com/'))
+    //new Practice(new Date('7/4/2022'), new Link('Google', 'https://www.google.com/')),
+    //new Practice(new Date('7/10/2022'), new Link('Google', 'https://www.google.com/'))
   ];
 
   constructor() { }
