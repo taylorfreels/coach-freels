@@ -20,11 +20,11 @@ export class ZionWomensSoccerComponent implements OnInit {
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
-    new Practice(new Date('7/10/2022'), new Link('Test 2', ''))
+    // new Practice(new Date('7/10/2022'), new Link('Test 2', ''))
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
-    new Practice(new Date('7/20/2022'), new Link('Test 1', ''))
+    // new Practice(new Date('7/20/2022'), new Link('Test 1', ''))
   ];
 
   constructor(private router: Router) { }
