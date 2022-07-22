@@ -1,10 +1,10 @@
 export class Link {
-  name: string;
+  name?: string;
   value: string;
   queryParams: any;
   isAngularRoute: boolean;
 
-  constructor(name: string, value: string, isAngularRoute: boolean = false, queryParams?: any) {
+  constructor(value: string, name?: string, isAngularRoute: boolean = false, queryParams?: any) {
     this.name = name;
     this.value = value;
     this.isAngularRoute = isAngularRoute;
