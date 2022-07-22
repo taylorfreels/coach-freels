@@ -13,18 +13,18 @@ import { Practice } from '../models/practice';
 })
 export class ZionWomensSoccerComponent implements OnInit {
   public games: Game[] = [
-    new Game(new Date('7/20/2022'), 'Zion vs Spring Hill (7v7)', new Link('VEO Link', 'https://app.veo.co/matches/20220721-072022-zion-vs-spring-hill/')),
-    new Game(new Date('7/20/2022'), 'Zion vs Shelbyville (7v7)', new Link('VEO Link', 'https://app.veo.co/matches/20220721-072022-zion-vs-shelbyville/')),
-    new Game(new Date('7/20/2022'), 'Zion vs Fairview (7v7)', new Link('VEO Link', 'https://app.veo.co/matches/20220721-072022-zion-vs-fairview/'))
+    new Game(new Date('7/20/2022'), 'Zion vs Spring Hill (7v7)', new Link('https://app.veo.co/matches/20220721-072022-zion-vs-spring-hill/')),
+    new Game(new Date('7/20/2022'), 'Zion vs Shelbyville (7v7)', new Link('https://app.veo.co/matches/20220721-072022-zion-vs-shelbyville/')),
+    new Game(new Date('7/20/2022'), 'Zion vs Fairview (7v7)', new Link('https://app.veo.co/matches/20220721-072022-zion-vs-fairview/'))
   ];
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
-    // new Practice(new Date('7/10/2022'), new Link('Test 2', ''))
+    // new Practice(new Date('7/10/2022'), new Link(''))
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
-    // new Practice(new Date('7/20/2022'), new Link('Test 1', ''))
+    new Practice(new Date('7/18/2022'), new Link('https://app.veo.co/matches/20220718-071822-zion-wsoc-training/'))
   ];
 
   constructor(private router: Router) { }

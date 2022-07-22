@@ -9,7 +9,7 @@ import { Link } from '../core/models/link';
   styleUrls: ['./teams.component.scss']
 })
 export class TeamsComponent implements OnInit {
-  public teamLinks: Link[] = teamRoutes.map(x => new Link(x.data!['name'], `/${x.path}`, true, { type: hiddenRoute }));
+  public teamLinks: Link[] = teamRoutes.map(x => new Link(`/${x.path}`, x.data!['name'], true, { type: hiddenRoute }));
 
   constructor() { }
 
