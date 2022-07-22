@@ -13,17 +13,17 @@ import { Practice } from '../models/practice';
 })
 export class ZionMensSoccerComponent implements OnInit {
   public games: Game[] = [
-    //new Game(new Date('7/3/2022'), 'Opponent 1', new Link('Google', 'https://www.google.com/')),
-    //new Game(new Date('7/9/2022'), 'Opponent 2', new Link('Google', 'https://www.google.com/'))
+    //new Game(new Date('7/3/2022'), 'Opponent 1', new Link('https://www.google.com/')),
+    //new Game(new Date('7/9/2022'), 'Opponent 2', new Link('https://www.google.com/'))
   ];
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
-    // new Practice(new Date('7/21/2022'), new Link('Test 2', ''))
+    // new Practice(new Date('7/21/2022'), new Link(''))
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
-    // new Practice(new Date('7/20/2022'), new Link('Test 1', ''))
+    // new Practice(new Date('7/20/2022'), new Link(''))
   ];
 
   constructor(private router: Router) { }
