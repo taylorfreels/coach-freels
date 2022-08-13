@@ -13,6 +13,10 @@ import { Practice } from '../models/practice';
 })
 export class ZionWomensSoccerComponent implements OnInit {
   public games: Game[] = [
+    new Game(new Date('8/13/2022'), 'Zion vs McEwen (Playday)', new Link('https://app.veo.co/matches/20220813-081322-zion-vs-mcewen/')),
+    new Game(new Date('8/13/2022'), 'Zion JV vs East Hickman JV (Playday)', new Link('https://app.veo.co/matches/20220813-081322-zion-jv-vs-ehhs-jv-playday/')),
+    new Game(new Date('8/13/2022'), 'Zion vs Hickman (Playday)', new Link('https://app.veo.co/matches/20220813-081322-zion-vs-hickman-playday/')),
+    new Game(new Date('8/13/2022'), 'Zion vs East Hickman (Playday)', new Link('https://app.veo.co/matches/20220813-081322-zion-vs-ehhs-playday/')),
     new Game(new Date('8/11/2022'), 'Zion @ Culleoka', new Link('https://app.veo.co/matches/20220812-081122-zion-culleoka/')),
     new Game(new Date('7/22/2022'), 'Zion vs Central (7v7)', new Link('https://app.veo.co/matches/20220723-zion-vs-central-072222-90f6ee3d/')),
     new Game(new Date('7/22/2022'), 'Zion vs Spring Hill (7v7)', new Link('https://app.veo.co/matches/20220723-zion-vs-spring-hill-072222/')),
