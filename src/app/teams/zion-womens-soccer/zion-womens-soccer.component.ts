@@ -32,7 +32,6 @@ export class ZionWomensSoccerComponent implements OnInit {
     new Practice(new Date('8/8/2022'), new Link('https://app.veo.co/matches/20220808-080822-zion-wsoc-training/')),
     new Practice(new Date('8/5/2022'), new Link('https://app.veo.co/matches/20220805-080522-zion-wsoc-training/')),
     new Practice(new Date('7/28/2022'), new Link('https://app.veo.co/matches/20220728-zion-wsoc-training-072822/'))
-    // new Practice(new Date('7/10/2022'), new Link(''))
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
