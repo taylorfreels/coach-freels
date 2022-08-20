@@ -13,6 +13,7 @@ import { Practice } from '../models/practice';
 })
 export class ZionWomensSoccerComponent implements OnInit {
   public games: Game[] = [
+    new Game(new Date('8/19/2022'), 'Zion @ BGA', new Link('https://app.veo.co/matches/20220819-155321-d3a26ae8/')),
     new Game(new Date('8/13/2022'), 'Zion vs McEwen (Playday)', new Link('https://app.veo.co/matches/20220813-081322-zion-vs-mcewen/')),
     new Game(new Date('8/13/2022'), 'Zion JV vs East Hickman JV (Playday)', new Link('https://app.veo.co/matches/20220813-081322-zion-jv-vs-ehhs-jv-playday/')),
     new Game(new Date('8/13/2022'), 'Zion vs Hickman (Playday)', new Link('https://app.veo.co/matches/20220813-081322-zion-vs-hickman-playday/')),
@@ -35,6 +36,7 @@ export class ZionWomensSoccerComponent implements OnInit {
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
+    new Practice(new Date('8/18/2022'), new Link('https://app.veo.co/matches/20220818-081822-zion-wsoc-training-195486a4/')),
     new Practice(new Date('8/17/2022'), new Link('https://app.veo.co/matches/20220817-081722-zion-wsoc-training-7612ab5d/')),
     new Practice(new Date('8/16/2022'), new Link('https://app.veo.co/matches/20220816-081622-zion-wsoc-training-b7c14da8/')),
     new Practice(new Date('8/4/2022'), new Link('https://app.veo.co/matches/20220804-080422-zion-wsoc-training/')),
