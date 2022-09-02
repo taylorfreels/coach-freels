@@ -19,6 +19,7 @@ export class ColumbiaArsenalU17bSoccerComponent implements OnInit {
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
+    new Practice(new Date('9/1/2022'), new Link('https://app.veo.co/matches/20220902-090122-columbia-arsenal-training-7e202d27/')),
     new Practice(new Date('8/25/2022'), new Link('https://app.veo.co/matches/20220826-082522-columbia-arsenal-training-878e3dc6/')),
     new Practice(new Date('8/22/2022'), new Link('https://app.veo.co/matches/20220823-082222-columbia-arsenal-training-e905dd1c/')),
     new Practice(new Date('8/18/2022'), new Link('https://app.veo.co/matches/20220819-081822-columbia-arsenal-training-fec0e9fb/')),
