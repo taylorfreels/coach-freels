@@ -13,6 +13,8 @@ import { Practice } from '../models/practice';
 })
 export class ColumbiaArsenalU17bSoccerComponent implements OnInit {
   public games: Game[] = [
+    new Game(new Date('10/2/2022'), 'Columbia Arsenal vs Lobos Rush Elite', new Link('https://app.veo.co/matches/20221002-100222-columbia-arsenal-vs-lobos-91d58651/')),
+    new Game(new Date('10/1/2022'), 'Columbia Arsenal vs Music City FC Premier', new Link('https://app.veo.co/matches/20221002-100122-columbia-arsenal-vs-music-city-395ba177/')),
     new Game(new Date('9/25/2022'), 'Columbia Arsenal vs TSC Premier', new Link('https://app.veo.co/matches/20220926-092522-columbia-arsenal-vs-tsc-premier-167357e1/')),
     new Game(new Date('9/17/2022'), 'Columbia Arsenal vs Albion SC Nashville', new Link('https://app.veo.co/matches/20220918-091722-columbia-arsenal-vs-albion-sc-20bef710/')),
     new Game(new Date('9/10/2022'), 'Columbia Arsenal @ TSC Showcase', new Link('https://app.veo.co/matches/20220911-091022-columbia-arsenal-tsc-showcase-9a28ed2a/')),
