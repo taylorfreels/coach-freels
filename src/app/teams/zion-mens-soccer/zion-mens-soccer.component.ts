@@ -13,8 +13,7 @@ import { Practice } from '../models/practice';
 })
 export class ZionMensSoccerComponent implements OnInit {
   public games: Game[] = [
-    //new Game(new Date('7/3/2022'), 'Opponent 1', new Link('https://www.google.com/')),
-    //new Game(new Date('7/9/2022'), 'Opponent 2', new Link('https://www.google.com/'))
+    new Game(new Date('1/11/2023'), 'Zion Cup 2023', new Link('https://app.veo.co/matches/20230111-zion-cup-2023-32ce6649/'))
   ];
   public practices?: Practice[];
 
