@@ -25,7 +25,8 @@ export class ZionMensSoccerComponent implements OnInit {
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
-    // new Practice(new Date('7/20/2022'), new Link(''))
+    new Practice(new Date('3/16/2023'), new Link('https://app.veo.co/matches/20230316-031623-zion-training-adce9f77/')),
+    new Practice(new Date('3/15/2023'), new Link('https://app.veo.co/matches/20230315-031523-zion-training-2befd2dd/'))
   ];
 
   constructor(private router: Router) { }
