@@ -13,7 +13,7 @@ import { Practice } from '../models/practice';
 })
 export class ZionMensSoccerComponent implements OnInit {
   public games: Game[] = [
-    new Game(new Date('3/23/2023'), 'Zion @ Franklin Christian Academy', new Link('https://app.veo.co/matches/20230324-zion-vs-fca-85c60667/')),
+    new Game(new Date('3/23/2023'), 'Zion vs Franklin Christian Academy', new Link('https://app.veo.co/matches/20230324-zion-vs-fca-85c60667/')),
     new Game(new Date('3/17/2023'), 'Zion @ Culleoka', new Link('https://app.veo.co/matches/20230318-zca-vs-culleoka-1170a342/')),
     new Game(new Date('3/14/2023'), 'Zion vs Marshall County', new Link('https://app.veo.co/matches/20230315-zca-vs-marshall-county-d5f09084/')),
     new Game(new Date('3/10/2023'), 'Zion vs FC Boyd', new Link('https://app.veo.co/matches/20230311-173512-bd14d6f8/')),
