@@ -13,6 +13,7 @@ import { Practice } from '../models/practice';
 })
 export class ZionMensSoccerComponent implements OnInit {
   public games: Game[] = [
+    new Game(new Date('3/28/2023'), 'Zion @ Lighthouse Christian', new Link('https://app.veo.co/matches/20230328-zion-lighthouse-christian-32823-4ad98cd6/')),
     new Game(new Date('3/23/2023'), 'Zion vs Franklin Christian Academy', new Link('https://app.veo.co/matches/20230324-zion-vs-fca-85c60667/')),
     new Game(new Date('3/17/2023'), 'Zion @ Culleoka', new Link('https://app.veo.co/matches/20230318-zca-vs-culleoka-1170a342/')),
     new Game(new Date('3/14/2023'), 'Zion vs Marshall County', new Link('https://app.veo.co/matches/20230315-zca-vs-marshall-county-d5f09084/')),
@@ -23,10 +24,12 @@ export class ZionMensSoccerComponent implements OnInit {
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
+    new Practice(new Date('3/29/2023'), new Link('https://app.veo.co/matches/20230329-032923-zion-msoc-training-c153d1a9/')),
     new Practice(new Date('3/7/2023'), new Link('https://app.veo.co/matches/20230307-160216-8b0f5b8c/'))
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
+    new Practice(new Date('3/20/2023'), new Link('https://app.veo.co/matches/20230320-032023-zion-training-515c4b70/')),
     new Practice(new Date('3/16/2023'), new Link('https://app.veo.co/matches/20230316-031623-zion-training-adce9f77/')),
     new Practice(new Date('3/15/2023'), new Link('https://app.veo.co/matches/20230315-031523-zion-training-2befd2dd/'))
   ];
