@@ -13,6 +13,7 @@ import { Practice } from '../models/practice';
 })
 export class ZionMensSoccerComponent implements OnInit {
   public games: Game[] = [
+    new Game(new Date('4/25/2023'), 'Zion vs Culleoka', new Link('https://app.veo.co/matches/20230426-042523-zion-vs-culleoka-3f7f6779/')),
     new Game(new Date('4/18/2023'), 'Zion vs Loretto', new Link('https://app.veo.co/matches/20230418-041823-zion-vs-loretto-90a615fe/')),
     new Game(new Date('4/13/2023'), 'Zion @ Franklin Christian Academy', new Link('https://app.veo.co/matches/20230414-041323-zion-fca-7812c399/')),
     new Game(new Date('4/11/2023'), 'Zion @ Franklin Classical School', new Link('https://app.veo.co/matches/20230412-041123-zion-fcs-993fd1ed/')),
@@ -27,6 +28,7 @@ export class ZionMensSoccerComponent implements OnInit {
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
+    new Practice(new Date('4/24/2023'), new Link('https://app.veo.co/matches/20230424-042423-zion-msoc-training-40cf18a7/')),
     new Practice(new Date('3/29/2023'), new Link('https://app.veo.co/matches/20230329-032923-zion-msoc-training-c153d1a9/')),
     new Practice(new Date('3/7/2023'), new Link('https://app.veo.co/matches/20230307-160216-8b0f5b8c/'))
   ];
