@@ -24,7 +24,10 @@ export class ColumbiaArsenalU17bSoccerComponent implements OnInit {
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
-    new Practice(new Date('8/31/2023'), new Link('https://app.veo.co/matches/20230901-083123-c5318894/')),
+    new Practice(new Date('8/31/2023'), new Link('https://app.veo.co/matches/20230901-083123-c5318894/'))
+  ];
+  private closedPractices: Practice[] = [
+    ...this.openPractices,
     new Practice(new Date('9/19/2022'), new Link('https://app.veo.co/matches/20220919-091922-columbia-arsenal-training-02a5a814/')),
     new Practice(new Date('9/12/2022'), new Link('https://app.veo.co/matches/20220913-091222-columbia-arsenal-training-8422e688/')),
     new Practice(new Date('9/1/2022'), new Link('https://app.veo.co/matches/20220902-090122-columbia-arsenal-training-7e202d27/')),
@@ -34,10 +37,6 @@ export class ColumbiaArsenalU17bSoccerComponent implements OnInit {
     new Practice(new Date('8/8/2022'), new Link('https://app.veo.co/matches/20220809-080822-columbia-arsenal-training/')),
     new Practice(new Date('8/4/2022'), new Link('https://app.veo.co/matches/20220805-080422-columbia-arsenal-training/')),
     new Practice(new Date('8/1/2022'), new Link('https://app.veo.co/matches/20220802-columbia-arsenal-training-080122/'))
-  ];
-  private closedPractices: Practice[] = [
-    ...this.openPractices,
-    // new Practice(new Date('7/20/2022'), new Link(''))
   ];
 
   constructor(private router: Router) { }
