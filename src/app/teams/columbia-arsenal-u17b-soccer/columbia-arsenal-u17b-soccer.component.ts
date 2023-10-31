@@ -13,9 +13,6 @@ import { Practice } from '../models/practice';
 })
 export class ColumbiaArsenalU17bSoccerComponent implements OnInit {
   public games: Game[] = [
-    new Game(new Date('10/29/2023'), '2006 Arsenal vs Camp Forest FC 06', new Link('https://app.veo.co/matches/20231029-102923-2006-arsenal-vs-camp-forest-fc-06-fe252785/')),
-    new Game(new Date('10/28/2023'), '2006 Arsenal vs Aris FC 2007 Boys Black', new Link('https://app.veo.co/matches/20231028-102723-2006-arsenal-vs-aris-fc-2007-boys-black-0b570d9b/')),
-    new Game(new Date('10/28/2023'), '2006 Arsenal vs WUSC 2006 Boys Black', new Link('https://app.veo.co/matches/20231028-102823-2006-arsenal-vs-wusc-2006-boys-black-ec468359/')),
     new Game(new Date('10/15/2023'), '2006 Arsenal @ NUSA B06 Navy', new Link('https://app.veo.co/matches/20231015-101523-2006-arsenal-nusa-b06-navy-9d50e82a/')),
     new Game(new Date('10/7/2023'), '2006 Arsenal @ JSC 2006 Boys', new Link('https://app.veo.co/matches/20231007-100723-2006-arsenal-jsc-2006-boys-6a89b9bc/')),
     new Game(new Date('10/1/2023'), '2006 Arsenal @ TSC Nashville 2006 Boys Premier', new Link('https://app.veo.co/matches/20231001-100123-2006-arsenal-tsc-nashville-2006-boys-premier-9815ccd3/')),
