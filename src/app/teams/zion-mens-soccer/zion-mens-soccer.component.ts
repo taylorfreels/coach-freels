@@ -13,6 +13,7 @@ import { Practice } from '../models/practice';
 })
 export class ZionMensSoccerComponent implements OnInit {
   public games: Game[] = [
+    new Game(new Date('2/22/2024'), 'Zion vs Richland HS', new Link('https://app.veo.co/matches/20231112-022224-zion-vs-richland-9d4e1a78/')),
     new Game(new Date('5/11/2023'), 'Zion @ Franklin Christian Academy', new Link('https://app.veo.co/matches/20230511-051123-zion-franklin-christian-academy-377c719f/')),
     new Game(new Date('5/9/2023'), 'Zion @ Community Christian School', new Link('https://app.veo.co/matches/20230510-050923-zion-community-christian-school-e970cef7/')),
     new Game(new Date('5/2/2023'), 'Zion @ Richland', new Link('https://app.veo.co/matches/20230503-050223-zion-richland-c7cbdd27/')),
@@ -33,16 +34,17 @@ export class ZionMensSoccerComponent implements OnInit {
   public practices?: Practice[];
 
   private openPractices: Practice[] = [
-    new Practice(new Date('4/24/2023'), new Link('https://app.veo.co/matches/20230424-042423-zion-msoc-training-40cf18a7/')),
-    new Practice(new Date('3/29/2023'), new Link('https://app.veo.co/matches/20230329-032923-zion-msoc-training-c153d1a9/')),
-    new Practice(new Date('3/7/2023'), new Link('https://app.veo.co/matches/20230307-160216-8b0f5b8c/'))
+
   ];
   private closedPractices: Practice[] = [
     ...this.openPractices,
+    new Practice(new Date('4/24/2023'), new Link('https://app.veo.co/matches/20230424-042423-zion-msoc-training-40cf18a7/')),
     new Practice(new Date('3/30/2023'), new Link('https://app.veo.co/matches/20230330-033023-zion-msoc-training-e056aecf/')),
+    new Practice(new Date('3/29/2023'), new Link('https://app.veo.co/matches/20230329-032923-zion-msoc-training-c153d1a9/')),
     new Practice(new Date('3/20/2023'), new Link('https://app.veo.co/matches/20230320-032023-zion-training-515c4b70/')),
     new Practice(new Date('3/16/2023'), new Link('https://app.veo.co/matches/20230316-031623-zion-training-adce9f77/')),
-    new Practice(new Date('3/15/2023'), new Link('https://app.veo.co/matches/20230315-031523-zion-training-2befd2dd/'))
+    new Practice(new Date('3/15/2023'), new Link('https://app.veo.co/matches/20230315-031523-zion-training-2befd2dd/')),
+    new Practice(new Date('3/7/2023'), new Link('https://app.veo.co/matches/20230307-160216-8b0f5b8c/'))
   ];
 
   constructor(private router: Router) { }
